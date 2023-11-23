@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 /* font-family: 'Poppins', sans-serif; */
 html {
-  background-color: black;
   line-height: 5px;
 }
 
@@ -14,6 +13,7 @@ body {
 }
 section {
   padding-left: 1em;
+  padding-right: 1em;
 }
 h1,
 h2,
@@ -36,18 +36,19 @@ h3 {
   font-size: 1.25em;
   color: white;
   padding-top: 1em;
-  padding-bottom: 1em;
 }
 ul {
   list-style: disc;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 ol {
   list-style: decimal;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 li {
   margin-left: 3rem;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
 }
 
 p {
@@ -112,6 +113,31 @@ aside {
   margin: auto;
   box-shadow: -7px 9px 7px -8px #333, 13px 13px 2px -8px rgba(0, 0, 0, 0.1);
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+th,
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+  width: 30%;
+}
+td:last-child {
+  width: 40%;
+}
+th {
+  background-color: skyblue;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+tr:nth-last-child(+ 1) td {
+  border-bottom: 2px solid skyblue;
+}
 footer {
   margin-top: 1.5em;
   background-color: rgb(0, 128, 128);
@@ -123,4 +149,25 @@ footer {
 footer a {
   color: fuchsia;
   font-weight: 500;
+}
+#i-frame p {
+  padding-bottom: 2em;
+}
+
+iframe {
+  border-radius: 15px;
+}
+
+.article {
+  background-color: lightgray;
+  margin-top: 1em;
+  border: 1.5 px solid lightgrey;
+}
+
+.article p {
+  padding: 0;
+}
+
+#parent-article {
+  padding-bottom: 2em;
 }
